@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FuncionsService } from '../service/funcions.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public funcionsService: FuncionsService) { }
 
-  ngOnInit(): void {
+
+  ngOnInit() {
   }
 
 }
