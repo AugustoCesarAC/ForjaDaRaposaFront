@@ -1,0 +1,53 @@
+<nav class="navbar sticky-top navbar-expand-lg menuBackground">
+  <div class="container-fluid">
+    <div class="px-4"></div>
+    <button class="btn border-0"> <a class="navbar-brand"><img src="https://i.imgur.com/PZA2LBW.png"
+          class="img-fluid rounded-circle" width="150px" alt=""></a> </button>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <h2 class="me-4 fontColor fw-bold pr-5 me-5 paddingCss">Forja da Raposa</h2>
+        </li>
+        <li class="nav-ite">
+            <form class="d-flex me-5" role="search">
+              <input class="form-control me-2 formSize" type="search" placeholder="O que procura?" aria-label="Search">
+              <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        <i class="fa fa-bars" aria-hidden="true"></i> TODA LOJA
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+    </div>
+
+    <div *ngFor="let item of [0,1,2,3,4,5,6]" class="dropdown d-flex align-items-stretch">
+      <button type="button" class="btn btn-primary dropdown-toggle mx-2" data-bs-toggle="dropdown">
+        Categoria {{item}}
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
